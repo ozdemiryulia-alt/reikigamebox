@@ -473,6 +473,12 @@ footer a:hover{color:var(--amber)}
 .support-result p{font-size:18px}
 .reveal{opacity:1;transform:none}
 @media(max-width:960px){.floats{display:none}.terms,.card p{font-size:17px}.support-result{padding:20px 16px}}
+
+#support-form .prep-field{display:flex;flex-direction:column;gap:12px;margin:16px 0;font-size:19px;line-height:1.5;font-weight:500}
+#support-form textarea{display:block;width:100%;min-height:110px;resize:vertical;background:rgba(0,0,0,.2);color:var(--cream);border:1px solid var(--cream-dim);border-radius:3px;padding:14px;font:400 17px/1.5 'Manrope',sans-serif}
+#support-form textarea::placeholder{color:var(--cream-dim);opacity:1}
+#support-form textarea:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+#support-answers{white-space:pre-wrap;overflow-wrap:anywhere;font:400 17px/1.6 'Manrope',sans-serif;margin:20px 0}
 </style>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -559,7 +565,32 @@ footer a:hover{color:var(--amber)}
 </section>
 
 <!-- УДАР -->
-<section class="punch"><div class="wrap"><h2>Что вы чувствуете, когда смотрите на поле игры «Прикосновение Рэйки»?</h2><p class="after">Поле можно сначала рассмотреть без объяснений: рисунок, маршрут, детали, к которым возвращается взгляд. А ниже познакомиться с тем, как проходит встреча и что получает Мастер, который будет её вести.</p></div></section>
+<section id="support-check"><div class="wrap">
+<h2>Что вы чувствуете, когда смотрите на поле игры «Прикосновение Рэйки»?</h2>
+<p style="margin-top:26px">Если хотите узнать, сможете ли вы вести эту игру, ниже можно рассказать о своей подготовке в Рэйки.</p>
+<h3 style="font-size:26px;margin-top:36px">Хватит ли моей подготовки, чтобы начать обучение игре?</h3>
+<p style="margin-top:26px">Ходам, картам и проведению игры я обучаю после покупки. А к началу этого обучения у вас уже должна быть база Мастера Рэйки: понимание символов, знание базовых техник и личная практика.</p>
+<p>Расскажите, у кого и в каком направлении вы учились, как практикуете и с кем уже работаете. По этим ответам я смогу обсудить с вами, подходит ли ваша подготовка для начала обучения игре «Прикосновение Рэйки».</p>
+<p>Анкета не выставляет баллы и не выдаёт автоматический допуск. Если в чём-то не уверены, так и напишите. Заполнение само по себе не отправляет ответы.</p>
+<form id="support-form">
+<label class="prep-field">В каком направлении Рэйки вы обучались? Какую ступень получили?<textarea name="direction" required rows="3" placeholder="Название направления и ваша ступень"></textarea></label>
+<label class="prep-field">У кого вы получили ступень Мастера? Какая у вас линия передачи?<textarea name="lineage" required rows="3" placeholder="Имя учителя и известная вам линия передачи. Если нужно уточнить, укажите это."></textarea></label>
+<label class="prep-field">Сколько лет вы практикуете Рэйки и как выглядит ваша практика сейчас?<textarea name="practice" required rows="3" placeholder="Стаж, личная практика, регулярность, перерывы"></textarea></label>
+<label class="prep-field">Есть ли у вас клиенты или ученики? Какую работу вы уже ведёте?<textarea name="work" required rows="3" placeholder="Например, сеансы, круги, обучение. Если пока практикуете только для себя, напишите об этом."></textarea></label>
+<label class="prep-field">Какие символы Рэйки вы изучали? Как понимаете их назначение и используете в практике?<textarea name="symbols" required rows="4" placeholder="Назовите изученные символы и опишите их применение своими словами. Рисунки символов не нужны."></textarea></label>
+<label class="prep-field">Какие базовые техники Рэйки вы знаете и применяете?<textarea name="techniques" required rows="4" placeholder="Назовите техники и кратко опишите, как выполняете одну из них."></textarea></label>
+<label class="prep-field">Есть ли у вас опыт ведения игр?<textarea name="games" required rows="3" placeholder="Какие игры вели, индивидуально или в группе. Если опыта пока нет, так и напишите."></textarea></label>
+<button class="btn" type="submit">Подготовить ответы к отправке</button>
+</form>
+<div id="support-result" class="support-result" role="status" tabindex="-1" hidden>
+<h3>Ответы подготовлены, но ещё не отправлены</h3>
+<p>Кнопка ниже откроет WhatsApp с вашим текстом. Вы сможете перечитать его и отправить мне. После знакомства с ответами я обсужу с вами подготовку к обучению игре.</p>
+<pre id="support-answers"></pre>
+<a id="support-send" class="btn" href="https://wa.me/905368726735" target="_blank" rel="noopener">Открыть ответы в WhatsApp</a>
+</div>
+<p style="margin-top:26px">Если удобнее общаться в Telegram, <a class="check-link" href="https://t.me/yulia_ozdemir" target="_blank" rel="noopener">напишите мне о подготовке к обучению</a>. Можно ответить на эти же вопросы в переписке.</p>
+<noscript><p>Сейчас автоматическая подготовка сообщения недоступна. Вы можете ответить на вопросы в Telegram по ссылке выше.</p></noscript>
+</div></section>
 
 <!-- КОЛЕЯ -->
 <section><div class="wrap"><div class="hod"><div class="cell">1</div><div class="lbl">С чего начинается встреча</div></div><h2>Вы рассказываете о Рэйки. Человек думает о разводе</h2><p style="margin-top:26px">Вы можете рассказывать о принципах, символах и тонкостях практики, а человек в это время думает, увольняться ли с работы, как поговорить с матерью или что делать с отношениями, в которых всё опять пошло по знакомому кругу.</p><p>В игре «Прикосновение Рэйки» он начинает со своего запроса. Предварительно изучать Рэйки участнику не требуется, а вам как ведущему нужна собственная подготовка: объяснять практики и отвечать на вопросы будете вы.</p></div></section>
@@ -659,34 +690,6 @@ footer a:hover{color:var(--amber)}
 <p>Поэтому после покупки я провожу несколько обучающих встреч онлайн или очно. На них разбирается проведение игры, а затем вы ведёте участников под моей супервизией: я сопровождаю вашу работу и разбираю с вами первую игру.</p>
 <p>Если вопрос касается конкретной практики или её объяснения, я даю индивидуальные комментарии. Обучение игре опирается на вашу базовую подготовку и опыт в Рэйки, но не заменяет их.</p>
 <p>Обучение, разбор первой игры, сообщество Мастеров игры, обучающая и маркетинговая поддержка входят в стоимость. Перед покупкой можно обсудить со мной, в чём именно вам понадобится помощь.</p>
-</div></section><section id="support-check"><div class="wrap">
-<h2>Какая поддержка понадобится вам для первой игры?</h2>
-<p style="margin-top:26px">«Я не знаю, как объяснить это задание» и «я пока не представляю, как собрать группу» требуют разных разговоров. Эти вопросы помогут понять, что стоит обсудить перед первой встречей, не выставляя оценку вам как Мастеру.</p>
-<p>Самодиагностика необязательна, баллов и проходного результата здесь нет. Ответы остаются на этой странице и автоматически мне не отправляются. Вы можете сразу <a class="check-link" href="https://t.me/yulia_ozdemir" target="_blank" rel="noopener">написать мне о подготовке или покупке</a>.</p>
-<form id="support-form">
-<fieldset><legend>Вы Мастер Рэйки традиционного направления?</legend>
-<label><input type="radio" name="master" value="yes" required> Да</label>
-<label><input type="radio" name="master" value="discuss"> Хочу уточнить, подходит ли моё направление или ступень</label></fieldset>
-<fieldset><legend>Есть ли у вас личная практика Рэйки сейчас?</legend>
-<label><input type="radio" name="practice" value="yes" required> Да, практикую</label>
-<label><input type="radio" name="practice" value="discuss"> Возвращаюсь после перерыва или хочу обсудить подготовку</label></fieldset>
-<fieldset><legend>Как вы объясняете практику человеку без опыта Рэйки?</legend>
-<label><input type="radio" name="explain" value="yes" required> Могу объяснить своими словами и ответить на вопросы</label>
-<label><input type="radio" name="explain" value="help"> Хочу разобрать объяснение на конкретном примере</label></fieldset>
-<fieldset><legend>Что хотелось бы разобрать подробнее? Можно выбрать несколько пунктов или пропустить.</legend>
-<label><input type="checkbox" name="help" value="mechanics"> Ходы, карты и порядок встречи</label>
-<label><input type="checkbox" name="help" value="practices"> Объяснение символов и практик</label>
-<label><input type="checkbox" name="help" value="group"> Ведение группы и вопросы участников</label>
-<label><input type="checkbox" name="help" value="first"> Первое проведение</label>
-<label><input type="checkbox" name="help" value="announce"> Приглашение участников и анонс</label></fieldset>
-<fieldset><legend>Какую версию игры вы рассматриваете?</legend>
-<label><input type="radio" name="format" value="box" required> Печатную</label>
-<label><input type="radio" name="format" value="online"> Онлайн</label>
-<label><input type="radio" name="format" value="both"> Обе или пока выбираю</label></fieldset>
-<button class="btn" type="submit">Посмотреть, что обсудить перед первой игрой</button>
-</form>
-<div id="support-result" class="support-result" role="status" tabindex="-1" hidden><h3 id="support-result-title"></h3><p id="support-result-text"></p><p id="support-format-text"></p><p>Если хотите обсудить ответы, напишите мне своё направление Рэйки, опыт проведения встреч и вопрос, на котором остановились.</p><a class="btn" href="https://t.me/yulia_ozdemir" target="_blank" rel="noopener">Обсудить подготовку в Telegram</a></div>
-<noscript><p>Для автоматической подсказки нужен JavaScript. Вопросы можно прочитать и без него, а подготовку обсудить со мной в Telegram по ссылке выше.</p></noscript>
 </div></section>
 
 <!-- ВОПРОСЫ -->
@@ -792,24 +795,13 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 <script>
 (function(){
 const form=document.getElementById('support-form');
+const fields=[['direction','Направление и ступень'],['lineage','Учитель и линия передачи'],['practice','Стаж и личная практика'],['work','Клиенты и ученики'],['symbols','Понимание и применение символов'],['techniques','Базовые техники'],['games','Опыт ведения игр']];
 form.addEventListener('submit',function(event){
  event.preventDefault();
  const data=new FormData(form);
- let title,text;
- if(data.get('master')!=='yes'||data.get('practice')!=='yes'){
-  title='Перед покупкой лучше обсудить подготовку';
-  text='По вашим ответам стоит начать с разговора о направлении Рэйки, текущей практике и ожиданиях от игры. Автоматическая подсказка не оценивает вашу квалификацию и не решает за вас вопрос покупки.';
- }else if(data.get('explain')==='help'||data.getAll('help').length){
-  title='Игра может подойти с личными комментариями в обучении';
-  text='Вы отметили вопросы, которые хотелось бы разобрать. Можно обсудить их со мной заранее: например, взять конкретное задание и уточнить, как объяснить его участнику. Отдельный вопрос не означает, что вам нужно заново изучать всю практику Рэйки.';
- }else{
-  title='Можно выбирать версию и осваивать проведение';
-  text='По вашим ответам базовая подготовка и личная практика есть. Следующий шаг: выбрать формат встреч и познакомиться с проведением игры. Обучение и первая игра под моей супервизией остаются частью подготовки, даже если сейчас вопросов нет.';
- }
- document.getElementById('support-result-title').textContent=title;
- document.getElementById('support-result-text').textContent=text;
- const formats={box:'Вы рассматриваете печатную версию для встреч за одним столом.',online:'Вы рассматриваете онлайн-версию для встреч через демонстрацию экрана.',both:'Если выбираете между версиями, начните с ближайшей встречи: где будете вы и где будут участники?'};
- document.getElementById('support-format-text').textContent=formats[data.get('format')];
+ const text='Хочу обсудить подготовку к обучению игре «Прикосновение Рэйки».\n\n'+fields.map(([key,label])=>label+':\n'+data.get(key).trim()).join('\n\n');
+ document.getElementById('support-answers').textContent=text;
+ document.getElementById('support-send').href='https://wa.me/905368726735?text='+encodeURIComponent(text);
  const result=document.getElementById('support-result');result.hidden=false;result.focus();
 });
 })();
